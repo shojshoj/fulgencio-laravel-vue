@@ -8,7 +8,7 @@
     <meta name="keywords" content="E-commerce, Buy Products, Sell Own Products, Joshua B. Fulgencio">
     <meta name="author" content="Joshua B. Fulgencio">
 
-    <title>Fulgencio - Laravel/Vue/Vuetify</title>
+    <title>Fulgencio - FuLaraVue</title>
 
     <link rel="icon" type="image/x-icon" href="/image/phap-logo.png">
 
