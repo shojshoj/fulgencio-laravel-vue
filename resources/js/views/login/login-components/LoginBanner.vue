@@ -6,15 +6,15 @@
     >
         <v-row class="pa-10">
             <v-col class="text-end">
-                <p class="text-h2 font-weight-medium text-header my-header">{{ header }}</p>
+                <p class="text-h2 font-weight-medium text-header my-header my-font">{{ header }}</p>
             </v-col>
         </v-row>
         <v-row class="ms-16 mb-16 bottom-text text-header">
             <v-col cols="12" class="text-h5 mb-n3">
-                <div>{{ subHeader }}</div>
+                <div class="my-font">{{ subHeader }}</div>
             </v-col>
             <v-col cols="12" class="text-overline text-subheader font-weight-light">
-                <p>{{ body }}</p>
+                <p class="my-font">{{ body }}</p>
             </v-col>
         </v-row>
     </v-img>
@@ -66,5 +66,8 @@
         position: absolute;
         bottom: 0;
         left: 0;
+    }
+    .my-font{
+        font-family: 'Source Serif Pro', sans-serif !important;
     }
 </style>

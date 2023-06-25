@@ -5,7 +5,7 @@
                 <v-col class="pa-10">
                     <p>
                         <v-icon icon="mdi-chevron-left" size="x-small"></v-icon> 
-                        <u>FULARAVUE</u>
+                        <u><router-link to="/" style="text-decoration: none;" class="text-header my-font">FULARAVUE</router-link></u>
                     </p>
                 </v-col>
             </v-row>
@@ -23,24 +23,58 @@
                                 <div class="text-h6 text-subheader my-font">Sign in to your Account</div>
                             </v-col>
                         </v-row>
-                        <v-row>
-                            <v-col>Username</v-col>
-                        </v-row>
-                        <v-row>
-                            <v-col>Password</v-col>
-                        </v-row>
-                        <v-row>
-                            <v-col>Remember Me and Forgot</v-col>
-                        </v-row>
-                        <v-row>
-                            <v-col>Button</v-col>
-                        </v-row>
-                        <v-row>
-                            <v-col>Button</v-col>
-                        </v-row>
-                        <v-row class="mt-16">
-                            <v-col>Sign Up Link</v-col>
-                        </v-row>
+                        <v-form @submit.prevent="handleLogin">
+                            <v-row>
+                                <v-col>
+                                    <v-text-field
+                                        label="Email"
+                                        type="input"
+                                        variant="solo"
+                                        color="primary"
+                                    ></v-text-field>
+                                </v-col>
+                            </v-row>
+                            <v-row class="mt-n5">
+                                <v-col>
+                                    <v-text-field
+                                        label="Password"
+                                        type="input"
+                                        variant="solo"
+                                        color="primary"
+                                    ></v-text-field>
+                                </v-col>
+                            </v-row>
+                            <v-row class="mt-n5">
+                                <v-col>
+                                    <v-btn
+                                        block
+                                        elevation="2"
+                                        color="primary"
+                                        type="submit"
+                                    >
+                                        Login
+                                    </v-btn>
+                                </v-col>
+                            </v-row>
+                            <v-row>
+                                <v-col>
+                                    <v-btn
+                                        block
+                                        elevation="2"
+                                        prepend-icon="mdi-google"
+                                    >
+                                        Sign In with Google
+                                    </v-btn>
+                                </v-col>
+                            </v-row>
+                            <v-row class="mt-12">
+                                <v-col>
+                                    <v-col class="align-center text-center">
+                                        <p class="my-font">Don't have an account yet? <router-link class="text-secondary" to="/register" style="text-decoration: none;">Register Here</router-link></p> 
+                                    </v-col>
+                                </v-col>
+                            </v-row>
+                        </v-form>
                     </v-sheet>
                 </v-col>
             </v-row>
@@ -60,7 +94,7 @@
     const LoginBanner = defineAsyncComponent(() => import("./login-components/LoginBanner.vue"))
 </script>
 
-<style scoped>w
+<style scoped>
     .my-font{
         font-family: 'Source Serif Pro', sans-serif !important;
     }
