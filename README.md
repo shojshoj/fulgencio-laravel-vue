@@ -1,16 +1,49 @@
-# Laravel-Vue-Vuetify
-WIP Laravel Vue Project
-## Author:
-<div>
-    <a href="https://github.com/shojshoj">
-        <img src="https://avatars.githubusercontent.com/shojshoj" width="50px">
-    </a>
-    <p>Joshua Fulgencio</p>
-</div>
+# FULARAVUE by Joshua Fulgencio
 
-### Welcome to my Laravel + Vue.JS Application
-<br>
-Features:<br>
-    -TBH
-Installation:<br>
-    -TBH
+## Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Contributing](../CONTRIBUTING.md)
+
+## About <a name = "about"></a>
+
+FULARAVUE is a WIP Portfolio Web System developed to showcase my Entry-Level Skills in Laravel and Vue Frameworks.
+
+## Getting Started <a name = "getting_started"></a>
+
+WIP
+
+### Prerequisites
+
+What things you need to install the software and how to install them.
+
+```
+WIP
+```
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running.
+
+Say what the step will be
+
+```
+WIP
+```
+
+WIP
+
+```
+WIP
+```
+
+End with an example of getting some data out of the system or using it for a little demo.
+
+## Usage <a name = "usage"></a>
+
+Add notes about how to use the system.
+
+```
+WIP
