@@ -13,7 +13,7 @@
             <v-col cols="12" class="text-h5 mb-n3">
                 <div class="my-font">{{ subHeader }}</div>
             </v-col>
-            <v-col cols="12" class="text-overline text-subheader font-weight-light">
+            <v-col cols="12" class="text-body text-subheader font-weight-medium">
                 <p class="my-font">{{ body }}</p>
             </v-col>
         </v-row>

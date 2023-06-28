@@ -8,9 +8,7 @@
     <meta name="keywords" content="E-commerce, Buy Products, Sell Own Products, Joshua B. Fulgencio">
     <meta name="author" content="Joshua B. Fulgencio">
 
-    <title>Fulgencio - FuLaraVue</title>
-
-    <link rel="icon" type="image/x-icon" href="/image/phap-logo.png">
+    <title>FuLaraVue by Fulgencio</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
