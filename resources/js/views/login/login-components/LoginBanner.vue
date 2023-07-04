@@ -3,6 +3,7 @@
         cover 
         :height="`${windowHeight}px`" 
         :src="imageLightMode"
+        class="my-banner"
     >
         <v-row class="pa-10">
             <v-col class="text-end">
@@ -69,5 +70,9 @@
     }
     .my-font{
         font-family: 'Source Serif Pro', sans-serif !important;
+    }
+    .my-banner{
+        -webkit-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.75)));
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     }
 </style>

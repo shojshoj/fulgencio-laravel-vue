@@ -11,11 +11,11 @@
             </v-row>
             <v-row class="pa-10">
                 <v-col
-                    class="text-center d-flex align-center justify center"
+                    class="text-center d-flex align-center justify-center"
                 >
                     <v-sheet
                         class="mx-auto rounded-xl py-10 px-15"
-                        color="background"
+                        color="transparent"
                     >
                         <v-row>
                             <v-col>
@@ -26,22 +26,12 @@
                         <v-form @submit.prevent="handleLogin">
                             <v-row>
                                 <v-col>
-                                    <v-text-field
-                                        label="Email"
-                                        type="input"
-                                        variant="solo"
-                                        color="primary"
-                                    ></v-text-field>
+                                    <LoginTextField label="Email"/>
                                 </v-col>
                             </v-row>
                             <v-row class="mt-n5">
                                 <v-col>
-                                    <v-text-field
-                                        label="Password"
-                                        type="input"
-                                        variant="solo"
-                                        color="primary"
-                                    ></v-text-field>
+                                    <LoginTextField label="Password"/>
                                 </v-col>
                             </v-row>
                             <v-row class="mt-n5">
@@ -51,6 +41,7 @@
                                         elevation="2"
                                         color="primary"
                                         type="submit"
+                                        class="my-btn"
                                     >
                                         Login
                                     </v-btn>
@@ -91,11 +82,24 @@
 
 <script setup>
     import { defineAsyncComponent } from "vue";
+    
+    //Components
+    import LoginTextField from "./login-components/LoginTextField.vue";
+
+    //Asynchrounous - Lazy Loading Components
     const LoginBanner = defineAsyncComponent(() => import("./login-components/LoginBanner.vue"))
+
+
+    async function handleLogin(){
+        
+    }
 </script>
 
 <style scoped>
     .my-font{
         font-family: 'Source Serif Pro', sans-serif !important;
+    }
+    .my-btn{
+        color: white !important;
     }
 </style>
